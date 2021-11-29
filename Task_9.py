@@ -1,7 +1,9 @@
 """У вас есть число и нужно определить какая цифра из этого числа является наибольшей."""
 
+
 def max_digit(number):
     return int(max(list(str(number))))
+
 
 if __name__ == '__main__':
     print("Example:")
@@ -13,4 +15,4 @@ if __name__ == '__main__':
     assert max_digit(634) == 6
     assert max_digit(1) == 1
     assert max_digit(10000) == 1
-    print("Coding complete? Click 'Check' to earn cool rewards!")
+    print('Тесты пройдены')

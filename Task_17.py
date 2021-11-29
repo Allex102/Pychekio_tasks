@@ -3,8 +3,10 @@
 
 Для пустого массива результат всегда 0 (ноль)."""
 
+
 def checkio(array: list) -> int:
-    return sum(array[::2])*array[-1] if array else 0
+    return sum(array[::2]) * array[-1] if array else 0
+
 
 # These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':
@@ -15,4 +17,4 @@ if __name__ == '__main__':
     assert checkio([1, 3, 5]) == 30, "(1+5)*5=30"
     assert checkio([6]) == 36, "(6)*6=36"
     assert checkio([]) == 0, "An empty array = 0"
-    print("Coding complete? Click 'Check' to review your tests and earn cool rewards!")
+    print('Тесты пройдены')

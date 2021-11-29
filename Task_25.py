@@ -6,14 +6,16 @@
 Если нет ни конечного, ни начального маркеров, то просто вернуть всю строку
 Если конечный маркер стоит перед начальным, то вернуть пустую строку"""
 
+
 def between_markers(text: str, begin: str, end: str) -> str:
-    begin_index = text.find(begin)+len(begin)
+    begin_index = text.find(begin) + len(begin)
     end_index = text.find(end)
     if begin not in text:
-        begin_index=0
+        begin_index = 0
     if end not in text:
-        end_index=len(text)
+        end_index = len(text)
     return text[begin_index:end_index]
+
 
 if __name__ == '__main__':
     print('Example:')
@@ -27,4 +29,4 @@ if __name__ == '__main__':
     assert between_markers('No [b]hi', '[b]', '[/b]') == 'hi', 'No close'
     assert between_markers('No hi', '[b]', '[/b]') == 'No hi', 'No markers at all'
     assert between_markers('No <hi>', '>', '<') == '', 'Wrong direction'
-    print('Wow, you are doing pretty good. Time to check it!')
+    print('Тесты пройдены')

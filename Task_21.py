@@ -7,8 +7,10 @@
 
 from datetime import datetime
 
+
 def days_diff(date1, date2):
-    return abs((datetime(*date1)-datetime(*date2)).days)
+    return abs((datetime(*date1) - datetime(*date2)).days)
+
 
 if __name__ == '__main__':
     print("Example:")
@@ -18,4 +20,4 @@ if __name__ == '__main__':
     assert days_diff((1982, 4, 19), (1982, 4, 22)) == 3
     assert days_diff((2014, 1, 1), (2014, 8, 27)) == 238
     assert days_diff((2014, 8, 27), (2014, 1, 1)) == 238
-    print("Coding complete? Click 'Check' to earn cool rewards!")
+    print('Тесты пройдены')

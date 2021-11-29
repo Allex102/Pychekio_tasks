@@ -1,7 +1,9 @@
 """Верните данную строку в перевернутом виде."""
 
+
 def backward_string(val):
     return val[::-1]
+
 
 if __name__ == '__main__':
     print("Example:")
@@ -12,4 +14,4 @@ if __name__ == '__main__':
     assert backward_string('') == ''
     assert backward_string('ohho') == 'ohho'
     assert backward_string('123456789') == '987654321'
-    print("Coding complete? Click 'Check' to earn cool rewards!")
+    print('Тесты пройдены')

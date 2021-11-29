@@ -5,8 +5,10 @@
  В качестве шутки над праворукими роботами, вы должны заменить все вхождения слова "right" на слова "left", даже если это часть другого слова.
   Все строки даны в нижнем регистре."""
 
-def left_join(phrases: tuple) :
-    return ','.join(phrases).replace('right','left')
+
+def left_join(phrases: tuple):
+    return ','.join(phrases).replace('right', 'left')
+
 
 if __name__ == '__main__':
     print('Example:')
@@ -17,4 +19,4 @@ if __name__ == '__main__':
     assert left_join(("bright aright", "ok")) == "bleft aleft,ok", "Bright Left"
     assert left_join(("brightness wright",)) == "bleftness wleft", "One phrase"
     assert left_join(("enough", "jokes")) == "enough,jokes", "Nothing to replace"
-    print("Coding complete? Click 'Check' to review your tests and earn cool rewards!")
+    print('Тесты пройдены')

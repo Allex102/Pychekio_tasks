@@ -2,11 +2,13 @@
 
 from typing import List, Any
 
+
 def all_the_same(elements: List[Any]) -> bool:
     for x in elements:
         if x is not elements[0]:
             return False
     return True
+
 
 if __name__ == '__main__':
     print("Example:")
@@ -18,4 +20,4 @@ if __name__ == '__main__':
     assert all_the_same(['a', 'a', 'a']) == True
     assert all_the_same([]) == True
     assert all_the_same([1]) == True
-    print("Coding complete? Click 'Check' to earn cool rewards!")
+    print('Тесты пройдены')

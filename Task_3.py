@@ -1,7 +1,9 @@
 """Вам дано положительное целое число. Определите сколько цифр оно имеет."""
 
+
 def number_length(a):
     return len(str(a))
+
 
 if __name__ == '__main__':
     print("Example:")
@@ -12,4 +14,4 @@ if __name__ == '__main__':
     assert number_length(0) == 1
     assert number_length(4) == 1
     assert number_length(44) == 2
-    print("Coding complete? Click 'Check' to earn cool rewards!")
+    print('Тесты пройдены')

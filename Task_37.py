@@ -6,10 +6,11 @@ the length should be bigger than 6;
 should contain at least one digit, but it cannot consist of just digits;
 if the password is longer than 9 - previous rule (about one digit), is not required."""
 
+
 def is_acceptable_password(password: str) -> bool:
-    if len(password)>9:
+    if len(password) > 9:
         return True
-    return False if len(password)<6 or password.isdigit() or password.isalpha() or ' ' in password else True
+    return False if len(password) < 6 or password.isdigit() or password.isalpha() or ' ' in password else True
 
 
 if __name__ == '__main__':
@@ -25,4 +26,4 @@ if __name__ == '__main__':
     assert is_acceptable_password('sh5') == False
     assert is_acceptable_password('1234567') == False
     assert is_acceptable_password('12345678910') == True
-    print("Coding complete? Click 'Check' to earn cool rewards!")
+    print('Тесты пройдены')

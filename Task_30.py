@@ -1,10 +1,13 @@
 """You have to split a given array into two arrays. If it has an odd amount of elements, then the first array should have more elements.
  If it has no elements, then two empty arrays should be returned."""
 
-from  math import ceil
+from math import ceil
+
+
 def split_list(items: list) -> list:
-    lenght=ceil(len(items)/2)
-    return [items[:lenght],items[lenght:]]
+    lenght = ceil(len(items) / 2)
+    return [items[:lenght], items[lenght:]]
+
 
 if __name__ == '__main__':
     print("Example:")
@@ -16,4 +19,4 @@ if __name__ == '__main__':
     assert split_list([1, 2, 3, 4, 5]) == [[1, 2, 3], [4, 5]]
     assert split_list([1]) == [[1], []]
     assert split_list([]) == [[], []]
-    print("Coding complete? Click 'Check' to earn cool rewards!")
+    print('Тесты пройдены')

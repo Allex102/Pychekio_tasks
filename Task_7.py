@@ -1,7 +1,9 @@
 """Проверить все ли символы в строке являются заглавными. Если строка пустая или в ней нет букв - функция должна вернуть True."""
 
+
 def is_all_upper(text):
     return text == text.upper()
+
 
 if __name__ == '__main__':
     print("Example:")
@@ -12,4 +14,4 @@ if __name__ == '__main__':
     assert is_all_upper('all lower') == False
     assert is_all_upper('mixed UPPER and lower') == False
     assert is_all_upper('') == True
-    print("Coding complete? Click 'Check' to earn cool rewards!")
+    print('Тесты пройдены')

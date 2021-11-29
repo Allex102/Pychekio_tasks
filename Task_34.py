@@ -8,12 +8,13 @@ two words in the given list are the same - your function should return False;
 the condition is case sensitive, which means 'hi' and 'Hi' are two different words;
 the text includes only English letters and spaces."""
 
-def words_order(text: str, words: list) -> bool :
-    text = text.split ( ' ' )
+
+def words_order(text: str, words: list) -> bool:
+    text = text.split(' ')
     for x in words:
         if x in text:
             try:
-                if text.index(x)< text.index(words[words.index(x)+1])<text.index(words[words.index(x)+2]):
+                if text.index(x) < text.index(words[words.index(x) + 1]) < text.index(words[words.index(x) + 2]):
                     return True
             except IndexError:
                 return True
@@ -33,12 +34,12 @@ if __name__ == '__main__':
     assert words_order('hi world im here', ['here', 'world']) == False
     assert words_order('hi world im here', ['world']) == True
     assert words_order('hi world im here',
- ['world', 'im', 'here']) == True
+                       ['world', 'im', 'here']) == True
     assert words_order('hi world im here',
- ['world', 'hi', 'here']) == False
+                       ['world', 'hi', 'here']) == False
     assert words_order('hi world im here', ['world', 'world']) == False
     assert words_order('hi world im here',
- ['country', 'world']) == False
+                       ['country', 'world']) == False
     assert words_order('hi world im here', ['wo', 'rld']) == False
     assert words_order('', ['world', 'here']) == False
-    print("Coding complete? Click 'Check' to earn cool rewards!")
+    print('Тесты пройдены')

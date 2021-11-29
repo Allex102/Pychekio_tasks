@@ -5,13 +5,15 @@ Those are the verification conditions:
 the length should be bigger than 6;
 should contain at least one digit."""
 
+
 def is_acceptable_password(password: str) -> bool:
-    digits_in_password=False
+    digits_in_password = False
     for x in password:
         if x.isdigit():
-            digits_in_password=True
+            digits_in_password = True
             break
     return True if len(password) > 6 and digits_in_password else False
+
 
 if __name__ == '__main__':
     print("Example:")
@@ -23,4 +25,4 @@ if __name__ == '__main__':
     assert is_acceptable_password('ashort') == False
     assert is_acceptable_password('muchlonger5') == True
     assert is_acceptable_password('sh5') == False
-    print("Coding complete? Click 'Check' to earn cool rewards!")
+    print('Тесты пройдены')

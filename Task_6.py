@@ -3,12 +3,14 @@
 Есть два ньюанса: (1) если в списке нет элемента до которого нужно удалить остальные элементы, то список не должен измениться. (2) если list пустой,
 то он должен остаться пустым."""
 
+
 def remove_all_before(items, border):
     if border in items:
-        items_index=items.index(border)
+        items_index = items.index(border)
         return items[items_index:]
     else:
         return items
+
 
 if __name__ == '__main__':
     print("Example:")
@@ -21,4 +23,4 @@ if __name__ == '__main__':
     assert list(remove_all_before([1, 1, 5, 6, 7], 2)) == [1, 1, 5, 6, 7]
     assert list(remove_all_before([], 0)) == []
     assert list(remove_all_before([7, 7, 7, 7, 7, 7, 7, 7, 7], 7)) == [7, 7, 7, 7, 7, 7, 7, 7, 7]
-    print("Coding complete? Click 'Check' to earn cool rewards!")
+    print('Тесты пройдены')

@@ -7,12 +7,14 @@
 В слове может быть апостроф и он является частью слова
 Весь текст может быть представлен только одним словом и все"""
 
+
 def first_word(text):
     if ',' in text:
-        text=text.replace(',', ' ')
+        text = text.replace(',', ' ')
     elif '.' in text:
-        text=text.replace('.',' ')
+        text = text.replace('.', ' ')
     return text.split()[0]
+
 
 if __name__ == '__main__':
     print("Example:")
@@ -26,4 +28,4 @@ if __name__ == '__main__':
     assert first_word("... and so on ...") == "and"
     assert first_word("hi") == "hi"
     assert first_word("Hello.World") == "Hello"
-    print("Coding complete? Click 'Check' to earn cool rewards!")
+    print('Тесты пройдены')

@@ -8,19 +8,21 @@
 Искомые слова всегда указаны в нижнем регистре
 Если слово не найдено ни разу, то его необходимо вернуть в словаре со значением 0 (ноль)"""
 
+
 def popular_words(text: str, words: list):
     # your code here
-    text=text.lower()
-    text=text.split()
-    last_dict={}
+    text = text.lower()
+    text = text.split()
+    last_dict = {}
     for x in words:
         if x in text:
-            key1={x: text.count(x)}
+            key1 = {x: text.count(x)}
             last_dict.update(key1)
         else:
-            key1={x: 0}
+            key1 = {x: 0}
             last_dict.update(key1)
     return last_dict
+
 
 if __name__ == '__main__':
     print("Example:")
@@ -43,4 +45,4 @@ I was nearly new
         'three': 0,
         'near': 0
     }
-    print("Coding complete? Click 'Check' to earn cool rewards!")
+    print('Тесты пройдены')

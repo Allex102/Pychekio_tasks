@@ -7,8 +7,10 @@
 Начальный и конечный маркеры всегда размером в один символ.
 Начальный и конечный маркеры всегда есть в строке и идут один за другим."""
 
+
 def between_markers(text: str, begin: str, end: str) -> str:
-    return text[text.index(begin)+1:text.index(end)]
+    return text[text.index(begin) + 1:text.index(end)]
+
 
 if __name__ == '__main__':
     print('Example:')
@@ -19,4 +21,4 @@ if __name__ == '__main__':
     assert between_markers('What is [apple]', '[', ']') == "apple"
     assert between_markers('What is ><', '>', '<') == ""
     assert between_markers('>apple<', '>', '<') == "apple"
-    print('Wow, you are doing pretty good. Time to check it!')
+    print('Тесты пройдены')

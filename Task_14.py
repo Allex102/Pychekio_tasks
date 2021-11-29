@@ -2,8 +2,10 @@
 начиналось с большой буквы и заканчивалось точкой.
 Обратите внимание на то, что не все исправления необходимы. Если предложение уже заканчивается на точку, то добавлять еще одну не нужно, это будет ошибкой"""
 
+
 def correct_sentence(text: str) -> str:
-    return text[0].upper()+text[1:] if text.endswith('.') else text[0].upper()+text[1:]+'.'
+    return text[0].upper() + text[1:] if text.endswith('.') else text[0].upper() + text[1:] + '.'
+
 
 if __name__ == '__main__':
     print("Example:")
@@ -15,3 +17,4 @@ if __name__ == '__main__':
     assert correct_sentence("Greetings, friends.") == "Greetings, friends."
     assert correct_sentence("hi") == "Hi."
     assert correct_sentence("welcome to New York") == "Welcome to New York."
+    print('Тесты пройдены')

@@ -5,9 +5,11 @@
  что "s" – это самый первый символ в слове "sims", а значит индекс первого вхождения равен 0. Но нам необходимо найти вторую "s", а она 4-ая по счету.
  Значит индекс второго вхождения (и ответ на вопрос) равен 3."""
 
+
 def second_index(text: str, symbol: str) -> [int, None]:
-    if text.count(symbol)>1:
+    if text.count(symbol) > 1:
         return text.find(symbol, text.index(symbol) + 1)
+
 
 if __name__ == '__main__':
     print('Example:')
@@ -19,4 +21,4 @@ if __name__ == '__main__':
     assert second_index("hi", " ") is None, "Third"
     assert second_index("hi mayor", " ") is None, "Fourth"
     assert second_index("hi mr Mayor", " ") == 5, "Fifth"
-    print('You are awesome! All tests are done! Go Check it!')
+    print('Тесты пройдены')
